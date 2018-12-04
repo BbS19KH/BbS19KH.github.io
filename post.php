@@ -10,11 +10,14 @@
       	$to = $_POST['email'];
       	$title = $_POST['name'];
       	$content = $_POST['message'];
+      	/*
       	if(mb_send_mail($to, $title, $content)){
         	echo "メールを送信しました";
       	} else {
         	echo "メールの送信に失敗しました";
-      	};
+      	};]
+      	*/
+      	mail($to, $title, $content);
     ?>
 	</body>
 </html>
